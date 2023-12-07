@@ -243,14 +243,17 @@ function getRandomYPosition(containerHeight, elementHeight) {
 }
 let currentPage = 0; 
 const pageFlipSound = new Audio('page_flip.mp3'); 
-const backgroundMusic = new Audio('music.mp3'); // I'm learning from last time >:(
+const backgroundMusic = new Audio('music.mp3');
 
 backgroundMusic.loop = true;
-document.addEventListener('DOMContentLoaded', function() {
-    backgroundMusic.play();
-});
+let musicStarted = false;
 
-
+function startMusic() {
+    if (!musicStarted) {
+        backgroundMusic.play();
+        musicStarted = true;
+    }
+}
 function updatePageStyles(pageIndex) {
     const pageData = pages[pageIndex];
     const notebook = document.querySelector('.notebook');
@@ -370,6 +373,7 @@ document.getElementById('prevButton').addEventListener('click', () => {
 });
 
 document.getElementById('nextButton').addEventListener('click', () => {
+    startMusic();
     changePage(currentPage + 1);
 });
 
