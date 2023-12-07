@@ -243,6 +243,13 @@ function getRandomYPosition(containerHeight, elementHeight) {
 }
 let currentPage = 0; 
 const pageFlipSound = new Audio('page_flip.mp3'); 
+const backgroundMusic = new Audio('music.mp3'); // I'm learning from last time >:(
+
+backgroundMusic.loop = true;
+document.addEventListener('DOMContentLoaded', function() {
+    backgroundMusic.play();
+});
+
 
 function updatePageStyles(pageIndex) {
     const pageData = pages[pageIndex];
