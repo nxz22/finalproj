@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mirrorbyte</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Desktop Icons -->
+    <div id="desktop-icons">
+        <div class="icon">
+            <img alt="Recycle Bin">
+            <span>Recycle Bin</span>
+        </div>
+        <div class="icon">
+            <img alt="Computer">
+            <span>Computer</span>
+        </div>
+        <div class="icon">
+            <img alt="Documents">
+            <span>Documents</span>
+        </div>
+        <div class="icon">
+            <img alt="Downloads">
+            <span>Internet Explorer</span>
+        </div>
+    </div>
+
+    <!-- Random Images -->
+    <div id="leftImage" class="side-image"></div>
+    <div id="rightImage" class="side-image"></div>
+
+    <!-- Notebook and Text Boxes -->
+<div class="sitecontainer">
+    <div class="notebook">
+        <div class="title-box left-title" id="leftTitleBox"></div>
+        <div class="text-box left-box" id="leftTextBox"> </div>
+
+        <div class="title-box right-title" id="rightTitleBox"></div>
+        <div class="text-box right-box" id="rightTextBox"></div>
+        
+        <div class="page-number" id="leftPageNumber">1</div>
+        <button class="nav-button" id="prevButton">
+            <img src="icons/ac01-icon-arrow.png" alt="Previous">
+        </button>
+        <div class="page-number" id="rightPageNumber">2</div>
+        <button class="nav-button" id="nextButton">
+            <img src="icons/ad01-icon-arrow.png" alt="Next">
+        </button>
+        
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
