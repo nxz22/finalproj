@@ -1,4 +1,3 @@
-// Define your content pages and their specific styles
 const pages = [
     { 
         sideImages: {
